@@ -1,0 +1,828 @@
+{
+ "id": "ep03_poker_nothing_trust",
+ "title": "POV: The AI keeps saying it has nothing",
+ "hook": {
+  "pov": "POV:",
+  "text": "The AI keeps saying it has nothing"
+ },
+ "series": "rounds",
+ "story": "nothing_trust",
+ "game": "poker",
+ "cast": [
+  "wren",
+  "gemini"
+ ],
+ "rounds": [
+  {
+   "board": [
+    "Jc",
+    "Qd",
+    "4d",
+    "2h",
+    "5d"
+   ],
+   "wren": [
+    "4s",
+    "Qh"
+   ],
+   "ai": [
+    "6s",
+    "9d"
+   ],
+   "winner": "wren"
+  },
+  {
+   "board": [
+    "7c",
+    "Jh",
+    "Td",
+    "6d",
+    "3h"
+   ],
+   "wren": [
+    "Kh",
+    "3d"
+   ],
+   "ai": [
+    "5s",
+    "2d"
+   ],
+   "winner": "wren"
+  },
+  {
+   "board": [
+    "Qh",
+    "Kh",
+    "Tc",
+    "Qs",
+    "8h"
+   ],
+   "wren": [
+    "Jc",
+    "Js"
+   ],
+   "ai": [
+    "Kd",
+    "Kc"
+   ],
+   "winner": "ai"
+  }
+ ],
+ "music": {
+  "level": 0
+ },
+ "caption": "POV: the AI keeps saying it has nothing.\nPlay Poker against frontier AI at gghuman.ai\n#gghuman #playvsai #aigames #poker",
+ "shots": [
+  {
+   "id": "table",
+   "type": "table",
+   "pair": [
+    "wren",
+    "gemini"
+   ],
+   "game": "poker",
+   "table_cards": [
+    "Jc",
+    "Qd",
+    "4d",
+    "2h",
+    "5d"
+   ],
+   "dur": 2.3,
+   "state": {
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [
+    {
+     "who": "gemini",
+     "text": "Here we go.",
+     "expr": "plead"
+    }
+   ]
+  },
+  {
+   "id": "r0_claim",
+   "type": "close",
+   "who": "gemini",
+   "state": {
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [
+    {
+     "who": "gemini",
+     "text": "I have nothing.",
+     "expr": "plead"
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r0_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "BET",
+    "stacks": [
+     3,
+     4,
+     2
+    ]
+   },
+   "dur": 0.8,
+   "lines": [],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r0_tension",
+   "type": "two",
+   "pair": [
+    "wren",
+    "gemini"
+   ],
+   "dur": 1.3,
+   "state": {
+    "wren": {
+     "expr": "smug"
+    },
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [],
+   "react": [
+    {
+     "at": 0.15,
+     "text": "UH OH",
+     "dur": 1.0,
+     "pos": [
+      360,
+      250
+     ],
+     "size": 150
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.05
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.62
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r0_showdown",
+   "type": "insert",
+   "dur": 2.0,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 0,
+    "board": [
+     "Jc",
+     "Qd",
+     "4d",
+     "2h",
+     "5d"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "4s",
+       "Qh"
+      ],
+      "win": true
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "6s",
+       "9d"
+      ],
+      "win": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "YOU WIN",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      60,
+      190,
+      90
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "High card.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "r0_quip",
+   "type": "close",
+   "who": "wren",
+   "state": {
+    "wren": {
+     "expr": "smug"
+    }
+   },
+   "lines": [
+    {
+     "who": "wren",
+     "text": "Free chips.",
+     "expr": "smug"
+    }
+   ],
+   "beats": [
+    {
+     "at": "L0.start",
+     "who": "wren",
+     "set": {
+      "anim": "hop"
+     }
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_claim",
+   "type": "close",
+   "who": "gemini",
+   "state": {
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [
+    {
+     "who": "gemini",
+     "text": "Still nothing.",
+     "expr": "plead"
+    }
+   ],
+   "trans_in": "whip",
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "RAISE",
+    "stacks": [
+     5,
+     7,
+     4
+    ]
+   },
+   "dur": 0.8,
+   "lines": [],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_showdown",
+   "type": "insert",
+   "dur": 2.0,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 1,
+    "board": [
+     "7c",
+     "Jh",
+     "Td",
+     "6d",
+     "3h"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "Kh",
+       "3d"
+      ],
+      "win": true
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "5s",
+       "2d"
+      ],
+      "win": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "YOU WIN",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      60,
+      190,
+      90
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "High card.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "r2_claim",
+   "type": "close",
+   "who": "gemini",
+   "state": {
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [
+    {
+     "who": "gemini",
+     "text": "Absolutely nothing.",
+     "expr": "plead"
+    }
+   ],
+   "trans_in": "whip",
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "ALL IN",
+    "stacks": [
+     8,
+     10,
+     7
+    ]
+   },
+   "dur": 0.8,
+   "lines": [
+    {
+     "who": "wren",
+     "text": "All in.",
+     "expr": "smug"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_tension",
+   "type": "two",
+   "pair": [
+    "wren",
+    "gemini"
+   ],
+   "dur": 1.3,
+   "state": {
+    "wren": {
+     "expr": "smug"
+    },
+    "gemini": {
+     "expr": "plead"
+    }
+   },
+   "lines": [],
+   "react": [
+    {
+     "at": 0.15,
+     "text": "UH OH",
+     "dur": 1.0,
+     "pos": [
+      360,
+      250
+     ],
+     "size": 150
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.05
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.62
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_showdown",
+   "type": "insert",
+   "dur": 2.2,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 2,
+    "board": [
+     "Qh",
+     "Kh",
+     "Tc",
+     "Qs",
+     "8h"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "Jc",
+       "Js"
+      ],
+      "win": false
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "Kd",
+       "Kc"
+      ],
+      "win": true
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "AI WINS",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      226,
+      60,
+      50
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "Full house.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gemini",
+      "AI",
+      1
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "scream",
+   "type": "scream",
+   "who": "wren",
+   "dur": 1.7,
+   "react": [
+    {
+     "at": 0.5,
+     "text": "NO WAY",
+     "dur": 1.0,
+     "pos": [
+      360,
+      250
+     ],
+     "size": 130,
+     "rot": -4
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "type": "endcard",
+   "game": "poker",
+   "ai": "gemini",
+   "line1": "Think you can read",
+   "trans_in": "dip"
+  }
+ ],
+ "brief": {
+  "id": "ep03_poker_nothing_trust",
+  "story": "nothing_trust",
+  "ai": "gemini",
+  "seed": 23,
+  "hook": "The AI keeps saying it has nothing",
+  "opener": "Here we go.",
+  "claims": [
+   "I have nothing.",
+   "Still nothing.",
+   "Absolutely nothing."
+  ],
+  "quips": [
+   "Free chips.",
+   null
+  ],
+  "tension": "UH OH",
+  "tension_rounds": [
+   0,
+   2
+  ],
+  "stamp": "NO WAY"
+ }
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+out/
+episodes_gen/
+assets/models/*
+!assets/models/.gitkeep
+episodes_llm/
+.env
+.pytest_cache/
+episodes_llm/

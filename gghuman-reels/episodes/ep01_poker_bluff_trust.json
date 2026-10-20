@@ -1,0 +1,813 @@
+{
+ "id": "ep01_poker_bluff_trust",
+ "title": "POV: The AI always tells you when it's bluffing",
+ "hook": {
+  "pov": "POV:",
+  "text": "The AI always tells you when it's bluffing"
+ },
+ "series": "rounds",
+ "story": "bluff_trust",
+ "game": "poker",
+ "cast": [
+  "wren",
+  "gpt"
+ ],
+ "rounds": [
+  {
+   "board": [
+    "2s",
+    "5s",
+    "Jd",
+    "Qd",
+    "4s"
+   ],
+   "wren": [
+    "Ah",
+    "3d"
+   ],
+   "ai": [
+    "6d",
+    "9h"
+   ],
+   "winner": "wren"
+  },
+  {
+   "board": [
+    "Tc",
+    "2c",
+    "9c",
+    "3d",
+    "7d"
+   ],
+   "wren": [
+    "4d",
+    "9d"
+   ],
+   "ai": [
+    "Kh",
+    "6c"
+   ],
+   "winner": "wren"
+  },
+  {
+   "board": [
+    "6d",
+    "9c",
+    "2c",
+    "5c",
+    "3s"
+   ],
+   "wren": [
+    "Qd",
+    "Qh"
+   ],
+   "ai": [
+    "Qc",
+    "Jc"
+   ],
+   "winner": "ai"
+  }
+ ],
+ "music": {
+  "level": 0
+ },
+ "caption": "POV: the AI always tells you when it's bluffing.\nPlay Poker against frontier AI at gghuman.ai\n#gghuman #playvsai #aigames #poker",
+ "shots": [
+  {
+   "id": "table",
+   "type": "table",
+   "pair": [
+    "wren",
+    "gpt"
+   ],
+   "game": "poker",
+   "table_cards": [
+    "2s",
+    "5s",
+    "Jd",
+    "Qd",
+    "4s"
+   ],
+   "dur": 2.3,
+   "state": {
+    "gpt": {
+     "expr": "calm"
+    }
+   },
+   "lines": [
+    {
+     "who": "gpt",
+     "text": "Deal me in.",
+     "expr": "calm"
+    }
+   ]
+  },
+  {
+   "id": "r0_claim",
+   "type": "close",
+   "who": "gpt",
+   "state": {
+    "gpt": {
+     "expr": "calm"
+    }
+   },
+   "lines": [
+    {
+     "who": "gpt",
+     "text": "I'm bluffing.",
+     "expr": "calm"
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r0_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "BET",
+    "stacks": [
+     3,
+     4,
+     2
+    ]
+   },
+   "dur": 0.8,
+   "lines": [],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r0_showdown",
+   "type": "insert",
+   "dur": 2.0,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 0,
+    "board": [
+     "2s",
+     "5s",
+     "Jd",
+     "Qd",
+     "4s"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "Ah",
+       "3d"
+      ],
+      "win": true
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "6d",
+       "9h"
+      ],
+      "win": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "YOU WIN",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      60,
+      190,
+      90
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "High card.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      0
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "r0_quip",
+   "type": "close",
+   "who": "wren",
+   "state": {
+    "wren": {
+     "expr": "smug"
+    }
+   },
+   "lines": [
+    {
+     "who": "wren",
+     "text": "So easy.",
+     "expr": "smug"
+    }
+   ],
+   "beats": [
+    {
+     "at": "L0.start",
+     "who": "wren",
+     "set": {
+      "anim": "hop"
+     }
+    }
+   ],
+   "tag": "HAND 1",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_claim",
+   "type": "close",
+   "who": "gpt",
+   "state": {
+    "gpt": {
+     "expr": "calm"
+    }
+   },
+   "lines": [
+    {
+     "who": "gpt",
+     "text": "Bluffing again.",
+     "expr": "calm"
+    }
+   ],
+   "trans_in": "whip",
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "RAISE",
+    "stacks": [
+     5,
+     7,
+     4
+    ]
+   },
+   "dur": 0.8,
+   "lines": [],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r1_showdown",
+   "type": "insert",
+   "dur": 2.0,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 1,
+    "board": [
+     "Tc",
+     "2c",
+     "9c",
+     "3d",
+     "7d"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "4d",
+       "9d"
+      ],
+      "win": true
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "Kh",
+       "6c"
+      ],
+      "win": false
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "YOU WIN",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      60,
+      190,
+      90
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "High card.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      1
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "r1_quip",
+   "type": "close",
+   "who": "wren",
+   "state": {
+    "wren": {
+     "expr": "smug"
+    }
+   },
+   "lines": [
+    {
+     "who": "wren",
+     "text": "Too easy.",
+     "expr": "smug"
+    }
+   ],
+   "beats": [
+    {
+     "at": "L0.start",
+     "who": "wren",
+     "set": {
+      "anim": "hop"
+     }
+    }
+   ],
+   "tag": "HAND 2",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_claim",
+   "type": "close",
+   "who": "gpt",
+   "state": {
+    "gpt": {
+     "expr": "calm"
+    }
+   },
+   "lines": [
+    {
+     "who": "gpt",
+     "text": "Definitely bluffing.",
+     "expr": "calm"
+    }
+   ],
+   "trans_in": "whip",
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_bet",
+   "type": "insert",
+   "prop": {
+    "kind": "chips",
+    "label": "ALL IN",
+    "stacks": [
+     8,
+     10,
+     7
+    ]
+   },
+   "dur": 0.8,
+   "lines": [
+    {
+     "who": "wren",
+     "text": "All in.",
+     "expr": "smug"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "chips",
+     "at": 0.1
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_tension",
+   "type": "two",
+   "pair": [
+    "wren",
+    "gpt"
+   ],
+   "dur": 1.3,
+   "state": {
+    "wren": {
+     "expr": "smug"
+    },
+    "gpt": {
+     "expr": "calm"
+    }
+   },
+   "lines": [],
+   "react": [
+    {
+     "at": 0.15,
+     "text": "HMM.",
+     "dur": 1.0,
+     "pos": [
+      360,
+      250
+     ],
+     "size": 150
+    }
+   ],
+   "sfx": [
+    {
+     "name": "heartbeat",
+     "at": 0.05
+    },
+    {
+     "name": "heartbeat",
+     "at": 0.62
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "r2_showdown",
+   "type": "insert",
+   "dur": 2.2,
+   "pad": 0.3,
+   "prop": {
+    "kind": "poker",
+    "round": 2,
+    "board": [
+     "6d",
+     "9c",
+     "2c",
+     "5c",
+     "3s"
+    ],
+    "win_at": 1.0,
+    "hands": [
+     {
+      "label": "YOU",
+      "cards": [
+       "Qd",
+       "Qh"
+      ],
+      "win": false
+     },
+     {
+      "label": "THE AI",
+      "cards": [
+       "Qc",
+       "Jc"
+      ],
+      "win": true
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "flip",
+     "at": 0.3
+    },
+    {
+     "name": "flip",
+     "at": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": 1.0,
+     "text": "AI WINS",
+     "dur": 0.9,
+     "pos": [
+      300,
+      190
+     ],
+     "size": 96,
+     "color": [
+      226,
+      60,
+      50
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "A flush.",
+     "pre": 0.5,
+     "speed": 0.93
+    }
+   ],
+   "tag": "HAND 3",
+   "tally": {
+    "title": "WINS",
+    "rows": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      0
+     ]
+    ],
+    "to": [
+     [
+      "wren",
+      "YOU",
+      2
+     ],
+     [
+      "ai:gpt",
+      "AI",
+      1
+     ]
+    ],
+    "at": 1.0
+   }
+  },
+  {
+   "id": "scream",
+   "type": "scream",
+   "who": "wren",
+   "dur": 1.7,
+   "react": [
+    {
+     "at": 0.5,
+     "text": "BUSTED",
+     "dur": 1.0,
+     "pos": [
+      360,
+      250
+     ],
+     "size": 130,
+     "rot": -4
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "type": "endcard",
+   "game": "poker",
+   "ai": "gpt",
+   "line1": "Think you can read",
+   "trans_in": "dip"
+  }
+ ],
+ "brief": {
+  "id": "ep01_poker_bluff_trust",
+  "story": "bluff_trust",
+  "ai": "gpt",
+  "seed": 11,
+  "hook": "The AI always tells you when it's bluffing",
+  "opener": "Deal me in.",
+  "claims": [
+   "I'm bluffing.",
+   "Bluffing again.",
+   "Definitely bluffing."
+  ],
+  "quips": [
+   "So easy.",
+   "Too easy."
+  ],
+  "tension": "HMM.",
+  "tension_rounds": [
+   2
+  ],
+  "stamp": "BUSTED"
+ }
+}

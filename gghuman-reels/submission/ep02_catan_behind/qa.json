@@ -1,0 +1,294 @@
+{
+ "passed": true,
+ "n_pass": 30,
+ "n_warn": 0,
+ "n_fail": 0,
+ "checks": [
+  {
+   "name": "video_format",
+   "status": "pass",
+   "value": "h264 720x1280 yuv420p",
+   "expect": "h264 720x1280 yuv420p",
+   "note": ""
+  },
+  {
+   "name": "fps",
+   "status": "pass",
+   "value": 30.0,
+   "expect": 30,
+   "note": ""
+  },
+  {
+   "name": "has_audio",
+   "status": "pass",
+   "value": "aac 48000Hz",
+   "expect": "aac 48000Hz",
+   "note": ""
+  },
+  {
+   "name": "duration_matches_timeline",
+   "status": "pass",
+   "value": 25.167,
+   "expect": "25.17\u00b10.12",
+   "note": ""
+  },
+  {
+   "name": "duration_reel_length",
+   "status": "pass",
+   "value": 25.17,
+   "expect": "12\u201359 s",
+   "note": ""
+  },
+  {
+   "name": "file_size_mb",
+   "status": "pass",
+   "value": 4.6,
+   "expect": "<60 MB",
+   "note": ""
+  },
+  {
+   "name": "neural_voice_used",
+   "status": "pass",
+   "value": "kokoro",
+   "expect": "kokoro (neural TTS) for every line",
+   "note": ""
+  },
+  {
+   "name": "loudness_lufs",
+   "status": "pass",
+   "value": -14.37,
+   "expect": "-16.5\u2026-11.5 (IG \u2248 -14)",
+   "note": ""
+  },
+  {
+   "name": "peak",
+   "status": "pass",
+   "value": 0.884,
+   "expect": "\u22640.98",
+   "note": ""
+  },
+  {
+   "name": "clipping",
+   "status": "pass",
+   "value": 0.0,
+   "expect": "<1e-4",
+   "note": ""
+  },
+  {
+   "name": "silence_before_reveal@20.1s",
+   "status": "pass",
+   "value": -106.9,
+   "expect": "< -48 dBFS (true pre-reveal silence)",
+   "note": ""
+  },
+  {
+   "name": "reveal_hit@20.1s",
+   "status": "pass",
+   "value": -9.8,
+   "expect": "loud downbeat on reveal frame",
+   "note": ""
+  },
+  {
+   "name": "max_dead_air_s",
+   "status": "pass",
+   "value": 1.36,
+   "expect": "\u22641.7 s without voice/sfx",
+   "note": ""
+  },
+  {
+   "name": "voice_onset_vs_timeline_ms",
+   "status": "pass",
+   "value": 0.0,
+   "expect": "\u226420 ms (audible speech starts on its caption/mouth frame)",
+   "note": ""
+  },
+  {
+   "name": "final_mix_lag_vs_voice_ms",
+   "status": "pass",
+   "value": 0.0,
+   "expect": "\u226420 ms",
+   "note": "encoder/mux delay"
+  },
+  {
+   "name": "speech_intelligible_asr",
+   "status": "pass",
+   "value": 0.977,
+   "expect": "mean line similarity \u22650.85 and every line \u22650.55",
+   "note": "worst: 'Easy win.' heard 'Easy when.' (0.80)",
+   "lines": [
+    {
+     "id": "s0l0",
+     "expected": "Roll the dice.",
+     "heard": "Roll the dice",
+     "sim": 1.0
+    },
+    {
+     "id": "s1l0",
+     "expected": "I'm losing.",
+     "heard": "I'm losing.",
+     "sim": 1.0
+    },
+    {
+     "id": "s2l0",
+     "expected": "You have two cities.",
+     "heard": "You have two cities.",
+     "sim": 1.0
+    },
+    {
+     "id": "s3l0",
+     "expected": "Nine versus four.",
+     "heard": "9 versus 4.",
+     "sim": 1.0
+    },
+    {
+     "id": "s4l0",
+     "expected": "Easy win.",
+     "heard": "Easy when.",
+     "sim": 0.8
+    },
+    {
+     "id": "s5l0",
+     "expected": "Still losing.",
+     "heard": "Still losing.",
+     "sim": 1.0
+    },
+    {
+     "id": "s6l0",
+     "expected": "The AI built two settlements.",
+     "heard": "The AI built two settlements.",
+     "sim": 1.0
+    },
+    {
+     "id": "s7l0",
+     "expected": "Nine versus six.",
+     "heard": "9 verses 6.",
+     "sim": 0.923
+    },
+    {
+     "id": "s8l0",
+     "expected": "Too easy.",
+     "heard": "Too Easy",
+     "sim": 1.0
+    },
+    {
+     "id": "s9l0",
+     "expected": "Definitely losing.",
+     "heard": "Definitely losing.",
+     "sim": 1.0
+    },
+    {
+     "id": "s11l0",
+     "expected": "Four hidden points.",
+     "heard": "4 hidden points.",
+     "sim": 1.0
+    },
+    {
+     "id": "s11l1",
+     "expected": "Ten points.",
+     "heard": "10 points.",
+     "sim": 1.0
+    }
+   ]
+  },
+  {
+   "name": "frame_count",
+   "status": "pass",
+   "value": 755,
+   "expect": 755,
+   "note": ""
+  },
+  {
+   "name": "cuts_on_timeline_frame",
+   "status": "pass",
+   "value": "8/8",
+   "expect": "\u226585% of hard cuts land exactly on their scheduled frame",
+   "note": ""
+  },
+  {
+   "name": "captions_appear_on_spoken_frame",
+   "status": "pass",
+   "value": "19/19",
+   "expect": "\u226590% of caption chunks pop on their word's frame",
+   "note": ""
+  },
+  {
+   "name": "max_frozen_run_s",
+   "status": "pass",
+   "value": 0.37,
+   "expect": "\u22640.5 s of identical frames",
+   "note": ""
+  },
+  {
+   "name": "black_frames_s",
+   "status": "pass",
+   "value": 0.0,
+   "expect": "\u22640.2 s near-black",
+   "note": ""
+  },
+  {
+   "name": "first_frame_hook_visible",
+   "status": "pass",
+   "value": 6352,
+   "expect": ">700 hook-text pixels in frame 0 (thumbnail shows the POV)",
+   "note": ""
+  },
+  {
+   "name": "first_frame_not_flat",
+   "status": "pass",
+   "value": 59.6,
+   "expect": ">25",
+   "note": ""
+  },
+  {
+   "name": "every_spoken_word_captioned",
+   "status": "pass",
+   "value": "ok",
+   "expect": "captions \u2287 dialogue",
+   "note": ""
+  },
+  {
+   "name": "no_overlapping_voices",
+   "status": "pass",
+   "value": false,
+   "expect": "False",
+   "note": ""
+  },
+  {
+   "name": "hook_length",
+   "status": "pass",
+   "value": 41,
+   "expect": "\u226470 chars",
+   "note": ""
+  },
+  {
+   "name": "first_line_within_1s",
+   "status": "pass",
+   "value": 0.13,
+   "expect": "\u22641.0 s (hook payoff starts immediately)",
+   "note": ""
+  },
+  {
+   "name": "ends_on_cta_card",
+   "status": "pass",
+   "value": "endcard",
+   "expect": "last shot is the endcard",
+   "note": ""
+  },
+  {
+   "name": "cta_button_visible_last_frame",
+   "status": "pass",
+   "value": 30743,
+   "expect": ">6000 yellow button pixels in the final frame",
+   "note": ""
+  },
+  {
+   "name": "series_length_s",
+   "status": "pass",
+   "value": 25.2,
+   "expect": "18\u201327 s (page reels are ~20 s)",
+   "note": ""
+  }
+ ],
+ "fixes": {},
+ "lufs": -14.371083386648007
+}

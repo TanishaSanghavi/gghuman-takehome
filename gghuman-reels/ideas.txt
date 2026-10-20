@@ -1,0 +1,6 @@
+# One idea per line for:  python run.py llm-batch ideas.txt   (needs ANTHROPIC_API_KEY)
+POV: the AI keeps saying it will fold, then doesn't
+POV: the AI says it can't read your poker face, three hands in a row
+POV: the AI insists it is bad at Catan every single turn
+POV: the AI apologises for every pot it wins
+POV: the AI says you'd win if you just calm down

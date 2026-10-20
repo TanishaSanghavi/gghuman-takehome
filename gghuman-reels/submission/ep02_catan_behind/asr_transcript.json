@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s0l0",
+  "expected": "Roll the dice.",
+  "heard": "Roll the dice",
+  "sim": 1.0
+ },
+ {
+  "id": "s1l0",
+  "expected": "I'm losing.",
+  "heard": "I'm losing.",
+  "sim": 1.0
+ },
+ {
+  "id": "s2l0",
+  "expected": "You have two cities.",
+  "heard": "You have two cities.",
+  "sim": 1.0
+ },
+ {
+  "id": "s3l0",
+  "expected": "Nine versus four.",
+  "heard": "9 versus 4.",
+  "sim": 1.0
+ },
+ {
+  "id": "s4l0",
+  "expected": "Easy win.",
+  "heard": "Easy when.",
+  "sim": 0.8
+ },
+ {
+  "id": "s5l0",
+  "expected": "Still losing.",
+  "heard": "Still losing.",
+  "sim": 1.0
+ },
+ {
+  "id": "s6l0",
+  "expected": "The AI built two settlements.",
+  "heard": "The AI built two settlements.",
+  "sim": 1.0
+ },
+ {
+  "id": "s7l0",
+  "expected": "Nine versus six.",
+  "heard": "9 verses 6.",
+  "sim": 0.923
+ },
+ {
+  "id": "s8l0",
+  "expected": "Too easy.",
+  "heard": "Too Easy",
+  "sim": 1.0
+ },
+ {
+  "id": "s9l0",
+  "expected": "Definitely losing.",
+  "heard": "Definitely losing.",
+  "sim": 1.0
+ },
+ {
+  "id": "s11l0",
+  "expected": "Four hidden points.",
+  "heard": "4 hidden points.",
+  "sim": 1.0
+ },
+ {
+  "id": "s11l1",
+  "expected": "Ten points.",
+  "heard": "10 points.",
+  "sim": 1.0
+ }
+]
