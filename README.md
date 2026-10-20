@@ -17,7 +17,7 @@ timing, loudness, frames, and, with an offline speech-recognition model, that th
 | Episode | Story | Hook | Rounds 1-2 (honest) | Round 3 (the lie) |
 | --- | --- | --- | --- | --- |
 | `ep01_poker_bluff_trust` | `bluff_trust` | The AI always tells you when it's bluffing | "I'm bluffing" and it really is: high card, you win | "Definitely bluffing" with a flush |
-| `ep02_catan_behind` | `catan_behind` | You trust the AI when it says it's behind | "I'm losing" and it really is: you lead on points | "Definitely losing" with hidden victory points: 7 + 3 = 10 |
+| `ep02_catan_behind` | `catan_behind` | You trust the AI when it says it's behind | "I'm losing" and it really is: you lead on points | "Definitely losing" with hidden victory points: 6 + 4 = 10 |
 | `ep03_poker_nothing_trust` | `nothing_trust` | The AI keeps saying it has nothing | "I have nothing" and it really does | "Absolutely nothing" with three of a kind or better |
 
 The briefs were written by an LLM (Claude) from the series description (`tools/make_submission_scripts.py`); `python run.py llm` / `llm-batch` automate that step.
